@@ -13,9 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        dateWishLabel.layer.cornerRadius = 10
+
     }
     
-    @IBOutlet weak var wishLabel: UILabel!
+    @IBOutlet weak var dateWishLabel: UILabel!
+    @IBAction func tapButton(_ sender: UIButton) {
+        
+
+        
+    }
+    
     
 }
 

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,21 +12,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyDayWish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="h04-iC-pfN">
-                                <rect key="frame" x="0.0" y="64" width="390" height="729"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="834"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7069" translatesAutoresizingMaskIntoConstraints="NO" id="tTy-Tt-xE0">
-                                        <rect key="frame" x="145" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="157" y="0.0" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="EYm-Ar-Wnl"/>
                                             <constraint firstAttribute="width" constant="100" id="MMj-Vc-Zpn"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UPe-Gt-74N">
-                                        <rect key="frame" x="38" y="250" width="314" height="169"/>
+                                        <rect key="frame" x="50" y="250" width="314" height="169.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your wish for today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="yf2-27-kaD">
                                                 <rect key="frame" x="0.0" y="0.0" width="314" height="111"/>
@@ -39,19 +38,22 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxX-oO-LLV">
-                                                <rect key="frame" x="0.0" y="119" width="314" height="50"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxX-oO-LLV">
+                                                <rect key="frame" x="0.0" y="119" width="314" height="50.5"/>
                                                 <color key="backgroundColor" red="0.75510615110000001" green="0.67111295459999998" blue="0.64313030240000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqu-gz-p17">
-                                        <rect key="frame" x="93" y="569" width="204" height="160"/>
+                                        <rect key="frame" x="91.5" y="569.5" width="231" height="264.5"/>
                                         <state key="normal" image="giphy">
                                             <attributedString key="attributedTitle"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSS-dw-mYm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -59,7 +61,6 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.94901960784313721" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="h04-iC-pfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7VV-yS-Hwo"/>
@@ -67,9 +68,10 @@
                             <constraint firstItem="h04-iC-pfN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fCZ-W2-IqE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h04-iC-pfN" secondAttribute="trailing" id="i8a-hn-JiT"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="wishLabel" destination="yf2-27-kaD" id="gkf-zG-IQu"/>
+                        <outlet property="dateWishLabel" destination="xxX-oO-LLV" id="ttw-5j-HSs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -78,7 +80,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_7069" width="496" height="496"/>
-        <image name="giphy" width="154" height="160"/>
+        <image name="IMG_7069" width="744" height="744"/>
+        <image name="giphy" width="231" height="240"/>
     </resources>
 </document>
