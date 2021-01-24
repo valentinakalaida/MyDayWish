@@ -9,21 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        dateWishLabel.layer.cornerRadius = 10
-
-    }
     
     @IBOutlet weak var dateWishLabel: UILabel!
     @IBAction func tapButton(_ sender: UIButton) {
         
-
-        
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        dateWishLabel.layer.cornerRadius = 10
+        currentDate()
+    }
+    
+    func currentDate() {
+        let date = Date()
+        let currentDate = DateFormatter()
+        currentDate.dateFormat = "dd.MM.yyyy"
+        let dateString = currentDate.string(from: date)
+        dateWishLabel.text = dateString
+    }
     
 }
 
