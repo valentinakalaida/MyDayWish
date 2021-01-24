@@ -1,0 +1,116 @@
+{
+  "images" : [
+    {
+      "filename" : "imgonline-com-ua-Resize-13l2Kjbsm4th.jpg",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-uholhcTduv6.jpg",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-RkVz7oO8lG6h.jpg",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-RItczEBPbyY0M.jpg",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-KZ0LjvU49XMDiOnp.jpg",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-QphlxvHDIyawb.jpg",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-QphlxvHDIyawb-1.jpg",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-99A354XikEHIwn.jpg",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-l26fRqjxjd7fx1.jpg",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-13l2Kjbsm4th-2.jpg",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-kbQvQdKI3ti2K.jpg",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-RkVz7oO8lG6h-1.jpg",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-13l2Kjbsm4th-1.jpg",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-KZ0LjvU49XMDiOnp-1.jpg",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-wXNqqeXNP9.jpg",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-QnpWRBAO6Jw.jpg",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-TIYZGC24lu2aJ6XE.jpg",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "83.5x83.5"
+    },
+    {
+      "filename" : "imgonline-com-ua-Resize-sHCGJjlivnvFV2U.jpg",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
