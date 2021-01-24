@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,51 +14,60 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyDayWish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7069" translatesAutoresizingMaskIntoConstraints="NO" id="tTy-Tt-xE0">
-                                <rect key="frame" x="157" y="68" width="100" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="h04-iC-pfN">
+                                <rect key="frame" x="0.0" y="64" width="390" height="729"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7069" translatesAutoresizingMaskIntoConstraints="NO" id="tTy-Tt-xE0">
+                                        <rect key="frame" x="145" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="EYm-Ar-Wnl"/>
+                                            <constraint firstAttribute="width" constant="100" id="MMj-Vc-Zpn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UPe-Gt-74N">
+                                        <rect key="frame" x="38" y="250" width="314" height="169"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your wish for today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="yf2-27-kaD">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="111"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="111" id="3zP-ne-R1T"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="IGI-DK-pnf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="42"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxX-oO-LLV">
+                                                <rect key="frame" x="0.0" y="119" width="314" height="50"/>
+                                                <color key="backgroundColor" red="0.75510615110000001" green="0.67111295459999998" blue="0.64313030240000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqu-gz-p17">
+                                        <rect key="frame" x="93" y="569" width="204" height="160"/>
+                                        <state key="normal" image="giphy">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="EYm-Ar-Wnl"/>
-                                    <constraint firstAttribute="width" constant="100" id="MMj-Vc-Zpn"/>
+                                    <constraint firstItem="qqu-gz-p17" firstAttribute="width" secondItem="h04-iC-pfN" secondAttribute="height" multiplier="33:128" constant="15.984375" id="WEt-wb-wAK"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your wish for today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="yf2-27-kaD">
-                                <rect key="frame" x="50" y="181" width="314" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="3zP-ne-R1T"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="IGI-DK-pnf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="42"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KAY-IY-Ncm">
-                                <rect key="frame" x="82" y="323" width="250" height="260"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqu-gz-p17">
-                                <rect key="frame" x="91.5" y="622" width="231" height="240"/>
-                                <state key="normal" image="giphy">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
-                            </button>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qqu-gz-p17" secondAttribute="bottom" id="3Cu-gG-BrK"/>
-                            <constraint firstItem="KAY-IY-Ncm" firstAttribute="top" secondItem="yf2-27-kaD" secondAttribute="bottom" constant="31" id="Cdx-HR-bD8"/>
-                            <constraint firstItem="KAY-IY-Ncm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="125:448" id="DZ6-bM-am0"/>
-                            <constraint firstItem="KAY-IY-Ncm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" priority="999" id="FfX-ec-Nyz"/>
-                            <constraint firstItem="tTy-Tt-xE0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LRm-aA-maT"/>
-                            <constraint firstItem="qqu-gz-p17" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="33:128" id="dHH-Bo-APn"/>
-                            <constraint firstItem="yf2-27-kaD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hJ1-g3-f0F"/>
-                            <constraint firstItem="qqu-gz-p17" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jS2-gd-9HL"/>
-                            <constraint firstItem="yf2-27-kaD" firstAttribute="top" secondItem="tTy-Tt-xE0" secondAttribute="bottom" constant="13" id="kDo-Kg-QLw"/>
-                            <constraint firstItem="KAY-IY-Ncm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ndA-DE-JNq"/>
-                            <constraint firstItem="tTy-Tt-xE0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="rGQ-36-DPj"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h04-iC-pfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7VV-yS-Hwo"/>
+                            <constraint firstItem="h04-iC-pfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qmv-7L-DEa"/>
+                            <constraint firstItem="h04-iC-pfN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fCZ-W2-IqE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h04-iC-pfN" secondAttribute="trailing" id="i8a-hn-JiT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,7 +76,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_7069" width="744" height="744"/>
-        <image name="giphy" width="231" height="240"/>
+        <image name="IMG_7069" width="496" height="496"/>
+        <image name="giphy" width="154" height="160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
